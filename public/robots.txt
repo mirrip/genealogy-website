@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-# Disallow admin/private areas
-Disallow: /api/
-Disallow: /_next/
-
-# Sitemap
-Sitemap: https://genealogy.example.com/sitemap.xml
