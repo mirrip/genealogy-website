@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://familyheritage.ru/sitemap.xml
+
+Host: https://familyheritage.ru
