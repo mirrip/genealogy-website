@@ -1,0 +1,64 @@
+.header {
+  background: rgba(74, 53, 32, 0.98);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 16px 0;
+  box-shadow: var(--shadow-md);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold-accent);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.8px;
+  transition: var(--transition);
+}
+
+.logo:hover {
+  transform: scale(1.02);
+  color: var(--light-beige);
+}
+
+.logoIcon {
+  font-size: 24px;
+  color: var(--light-beige);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  color: var(--light-beige);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition);
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--gold-accent);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}

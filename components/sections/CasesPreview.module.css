@@ -1,0 +1,86 @@
+.section {
+  padding: 80px 0;
+  background: white;
+}
+
+.sectionTitle {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--primary-brown);
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 18px;
+  margin-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  transition: var(--transition);
+  display: block;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.image {
+  height: 180px;
+  background: var(--secondary-brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-beige);
+  font-size: 48px;
+  opacity: 0.6;
+}
+
+.content {
+  padding: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: var(--primary-brown);
+  margin-bottom: 8px;
+}
+
+.description {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.viewAll {
+  text-align: center;
+  margin-top: 48px;
+}
